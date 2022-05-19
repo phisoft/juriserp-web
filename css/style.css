@@ -68,7 +68,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Heebo", sans-serif;
-  font-weight: bold; }
+  font-weight: bold; } 
 
 button:focus {
   outline: none;
@@ -77,10 +77,21 @@ button:focus {
 .p_120 {
   padding-top: 120px;
   padding-bottom: 120px; }
+  @media (max-width: 769px) {
+    .p_120 {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 30px; } }
+
 .p_30 {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px; }  
+  @media (max-width: 769px) {
+    .p_30 {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 30px; } }
 
 .pad_top {
   padding-top: 120px; }
@@ -98,6 +109,10 @@ button:focus {
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px; } }
+    @media (max-width: 769px) {
+      .container {
+        max-width: 700px;
+        text-align: center; } }
 
 @media (min-width: 1620px) {
   .box_1620 {
@@ -110,14 +125,15 @@ button:focus {
 ============================================================================================ */
 .main_title {
   text-align: center;
-  margin-bottom: 75px; }
+  margin-bottom: 40px;
+  margin-top: 30px; }
   .main_title h2 {
     font-family: "Heebo", sans-serif;
     font-size: 36px;
     color: #222222;
     font-weight: bold;
     margin-bottom: 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase; }   
   .main_title p {
     font-size: 14px;
     font-family: "Roboto", sans-serif;
@@ -354,7 +370,6 @@ button:focus {
     min-height: 780px;
     z-index: 1; }
     .blog_banner .banner_inner .overlay {
-      background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
       opacity: .5;
       height: 125%;
       position: absolute;
@@ -373,6 +388,14 @@ button:focus {
         font-family: "Roboto", sans-serif;
         line-height: 66px;
         margin-bottom: 15px; }
+        
+      .blog_banner .banner_inner .blog_b_text h3 {
+        font-size: 60px;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        line-height: 66px;
+        margin-bottom: 15px; }
+
       .blog_banner .banner_inner .blog_b_text p {
         font-size: 16px;
         margin-bottom: 35px; }
@@ -2708,6 +2731,10 @@ h6 {
         background-image: -ms-linear-gradient(0deg, #2c4957 0%, #34586E 100%);
         box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
         color: #fff; }
+        
+      @media (max-width: 320px) {
+        .made_life_inner .nav.nav-tabs li a {
+          font-size: 12px; } }
 .made_life_inner .tab-content .tab-pane {
   border: none;
   padding-top: 80px; }
@@ -2722,12 +2749,23 @@ h6 {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
   margin-bottom: 20px; }
+  @media (max-width: 767px) {
+    .made_life_text h3 {
+      font-size: 28px;
+      line-height: 40px;
+      padding-top: 10px; } }
 .made_life_text h6 {
   color: #222222;
   font-size: 22px;
   line-height: 35px;
   font-weight: 500;
   font-family: "Roboto", sans-serif; }
+  @media (max-width: 767px) {
+    .made_life_text h6 {
+      font-size: 16px;
+      padding-top: 10px;
+      line-height: 25px;
+     } }
 .made_life_text p {
   margin-bottom: 0px; }
 .made_life_text .main_btn {
