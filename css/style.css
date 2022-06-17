@@ -1702,17 +1702,34 @@ button:focus {
 
 .contact_info .info_item {
   position: relative;
-  padding-left: 45px;
+  padding-left: 0px;
 }
 
 .contact_info .info_item i {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   font-size: 20px;
   line-height: 24px;
   color: #2c4957;
   font-weight: 600;
+}
+
+@media (min-width: 991px) {
+  .contact_info .info_item {
+    position: relative;
+    padding-left: 45px;
+  }
+
+  .contact_info .info_item i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2c4957;
+    font-weight: 600;
+  }
 }
 
 .contact_info .info_item h6 {
